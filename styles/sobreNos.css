@@ -1,0 +1,67 @@
+@keyframes mudaBackground{
+    0%{
+        background-image: url(../images/TankoubonVol1Cover.webp);
+        transition: 1s;
+    }
+    33%{
+        background-image: url(../images/TankoubonVol2Cover.webp);
+        transition: 1s;
+    }
+    66%{
+        background-image: url(../images/TankoubonVol3Cover.webp);
+        transition: 1s;
+    }
+    100%{
+        background-image: url(../images/TankoubonVol4Cover.webp);
+        transition: 1s;
+    }
+   
+}
+
+main{
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+#caixaImagem{
+    background-image: url(../images/TankoubonVol1Cover.webp);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    animation: mudaBackground 10s infinite;
+    /*animation-duration: 5s;*/
+    /*animation-iteration-count: infinite;*/
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 30px;
+    border-style: inset;
+    
+}
+
+section{
+    display:flex;
+    flex-direction: row;
+    margin: 30px;
+    width: 80%;
+    height: 500px;
+
+}
+
+#foto{
+    background-color: black;
+    height: 100%;
+    width: 50%;
+    
+}
+
+#texto{
+    background-color: brown;
+    height: 100%;
+    width: 50%;
+
+}
+
+
